@@ -1,0 +1,25 @@
+resources:
+
+- name: s-c-netflix-ci
+  type: git
+  source:
+    uri: https://github.com/bijukunjummen/spring-cloud-netflix-ci.git
+    branch: master
+
+
+- name: spring-cloud-netflix
+  type: git
+  source:
+    uri: https://github.com/spring-cloud/spring-cloud-netflix.git
+    branch: master
+
+
+
+jobs:
+
+- name: build
+  plan:
+  - get: s-c-netflix-ci
+  - get: spring-cloud-netflix
+  - task: build
+    file: s-c-netflix-ci/tasks/build.yml
