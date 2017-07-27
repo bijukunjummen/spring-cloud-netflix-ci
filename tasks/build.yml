@@ -9,3 +9,6 @@ run:
 inputs:
 - name: s-c-netflix-ci
 - name: spring-cloud-netflix
+
+caches:
+- path: ~/.m2/
