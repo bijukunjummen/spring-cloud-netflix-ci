@@ -11,4 +11,4 @@ inputs:
 - name: spring-cloud-netflix
 
 caches:
-- path: ~/.m2/
+- path: .m2/

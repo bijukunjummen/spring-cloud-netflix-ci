@@ -3,4 +3,4 @@
 
 cd spring-cloud-netflix
 
-./mvnw clean install
+./mvnw -s settings.xml clean install
