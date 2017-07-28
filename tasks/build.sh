@@ -3,4 +3,4 @@
 
 cd spring-cloud-netflix
 
-./mvnw -s ../s-c-netflix-ci/tasks/settings.xml clean install
+./mvnw -Dmaven.repo.local=../.m2/repository clean install
